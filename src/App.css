@@ -1,0 +1,26 @@
+@import './styles/shared.css';
+@import './styles/shell.css';
+@import './styles/pages.css';
+@import './styles/settings.css';
+
+.mobile-menu-fab {
+  display: none;
+  position: fixed;
+  bottom: 18px;
+  left: 18px;
+  z-index: 50;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-menu);
+}
+
+@media (max-width: 800px) {
+  .mobile-menu-fab {
+    display: grid;
+    place-items: center;
+  }
+}
